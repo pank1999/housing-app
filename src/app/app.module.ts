@@ -6,17 +6,11 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeModule } from './modules/home/home.module';
 import { UserModule } from './modules/user/user.module';
-import { UserCardComponent } from './components/user-card/user-card.component';
+import { UserCardComponent } from './modules/user/user-card/user-card.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, UserCardComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HomeModule,
-    UserModule,
-    UserCardComponent,
-  ],
+  declarations: [AppComponent, NavbarComponent],
+  imports: [BrowserModule, AppRoutingModule, HomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
