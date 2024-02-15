@@ -1,0 +1,18 @@
+<div class="top">
+    <h1>Housing Details</h1> <button (click)="deleteLocation()" >Delete</button>
+</div>
+<div class="container">
+    <div class="left">
+       <h2>{{housingLocation.name}}</h2>
+       <p>{{housingLocation.state}} {{housingLocation.city}}</p>
+       <h3>About this housing location</h3>
+       <div>
+           <li>Units available : {{housingLocation.availableUnits}} </li>
+           <li>Does this location have wifi : {{housingLocation.wifi}} </li>
+           <li>Does this location have laundry: {{housingLocation.laundry}}</li>
+       </div>
+    </div>
+    <div class="right">
+        <img [src]="housingLocation.photo" alt="img" />
+    </div>
+</div>

@@ -1,0 +1,9 @@
+ <div class="user-card">
+    <img [src]="user.avatar_url" alt="User Avatar">
+    <h2>angular</h2>
+    <p><strong>Email:</strong> <a href="mailto:angular@angular.io">{{user?.email}}</a></p>
+    <p><strong>Location:</strong>{{user?.location}}</p>
+    <p><strong>GitHub Profile:</strong> <a [href]="user.html_url">angular</a></p>
+    <p><strong>Joined GitHub:</strong> {{user.created_at | Date}} </p>
+    <p><strong>Last Updated:</strong>{{user.updated_at | Date }}</p>
+  </div>

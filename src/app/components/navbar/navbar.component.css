@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.home {
+    cursor: pointer;
+}
+
+.user {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.user img {
+    height: 40px;
+    width: 40px;
+}
+
+.user span {
+    font-size: 1.5rem;
+    color: green;
+}
