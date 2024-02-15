@@ -19,6 +19,9 @@ export class HousingLocationService {
   }
 
   async deleteLocationById(id: number) {
-    return this.http.delete<HousingLocation[]>(`${this.url}/${id}`);
+    return await fetch(`${this.url}/${id}`, {
+      method: 'Delete',
+    });
+    // return this.http.delete<HousingLocation[]>(`${this.url}/${id}`);
   }
 }

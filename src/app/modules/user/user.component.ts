@@ -12,5 +12,6 @@ export class UserComponent implements OnInit {
   userService: UserService = inject(UserService);
   async ngOnInit() {
     this.users = await this.userService.getAllUser();
+    console.log(this.users);
   }
 }

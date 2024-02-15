@@ -1,7 +1,8 @@
  <div class="user-card">
     <img [src]="user.avatar_url" alt="User Avatar">
-    <h2>angular</h2>
-    <p><strong>Email:</strong> <a href="mailto:angular@angular.io">{{user?.email}}</a></p>
-    <p><strong>Location:</strong>{{user?.location}}</p>
-    <p><strong>GitHub Profile:</strong> <a [href]="user.html_url">angular</a></p>
-  </div>
+    <h2>{{user?.login}}</h2>
+    <!-- <p><strong>Email:</strong> <a href="mailto:angular@angular.io">{{user?.email || 'NA'}}</a></p> -->
+    <p><strong>Location:</strong>{{user?.location || 'NA'}}</p>
+    <!-- <p><strong>GitHub Profile:</strong> <a [href]="user.html_url">angular</a></p> -->
+    <button (click)="handleView()">View</button>
+ </div>

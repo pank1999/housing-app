@@ -1,0 +1,17 @@
+<div class="top">
+    <h1>User Details</h1> <button (click)="deleteUser()" >Delete</button>
+</div>
+<div class="container">
+    <div class="left">
+       <h2>{{user?.login}}</h2>
+       <h3>{{user?.location}} </h3>
+       <div>
+        <li>Email : {{user.email}}</li>
+        <li>Created At : {{user.created_at}} </li>
+        <li>Last Updated At : {{user.updated_at}} </li>
+       </div>
+    </div>
+    <div class="right">
+        <img [src]="user.avatar_url" alt="img" />
+    </div>
+</div>

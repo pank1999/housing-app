@@ -19,6 +19,8 @@ export class UserService {
   }
 
   async deleteUserById(id: number) {
-    return this.http.delete<User[]>(`${this.url}/${id}`);
+     return await fetch(`${this.url}/${id}`, {
+       method: 'Delete',
+     });
   }
 }
